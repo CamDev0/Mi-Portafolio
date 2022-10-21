@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary: #3E432E;
+    --secundary: #616F39;
+    --terciary: #A7D129;
+    --dark-light: #222222;
+    --dark: #050505;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    height: 40px;
+}
+
+.navbar ul li {
+    padding-top: 8px;
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--terciary);
+    margin: 20px;
+}
+
+.hero {
+    background-color: var(--dark);
+}
+
+.hero img {
+    width: 100%;
+    height: 530px;
+    
+}
