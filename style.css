@@ -155,3 +155,37 @@ body {
 .contact-icon img:hover {
     transform: scale(1.2);
 }
+
+/*Portfolio*/
+
+.portfolio {
+    background-color: var(--dark-light);
+}
+
+.portfolio-section h2 {
+    padding: 40px;
+    text-align: center;
+}
+
+.portfolio-grid {
+/*auto-fit es una función para que los elementos se creen dependiendo del tamaño de la pantalla, así evitamos los mq, responsive*/
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+     gap: 15px;
+     width: 90%;
+     margin: 0 auto;
+}
+
+/*Propiedades iniciales de la imagen en el grid*/
+.portfolio-grid img {
+    width: 100%;
+    border-radius: 10px;
+    
+    /*Le decimos que transform esta cambiando en el estado final, y le indicamos que haga una transición con el efecto y el tiempo que indicamos*/
+    transition: transform 0.2s ease;
+}
+
+/*Estado final de la transición cuando se pone el mouse encima*/
+.portfolio-grid img:hover {
+    transform: scale(1.1);
+}
