@@ -10,6 +10,7 @@
     --terciary: #A7D129;
     --dark-light: #222222;
     --dark: #050505;
+    --white: #ffffff;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
 .navbar {
     display: flex;
     justify-content: flex-end;
+    padding: 7px;
 }
 
 .navbar ul {
@@ -39,14 +41,17 @@ body {
     text-decoration: none;
     color: var(--secundary);
     margin: 20px;
+    transition: transform 0.2s ease;
 }
 
 .navbar a:hover{
-    border-bottom: var(--terciary) solid ;
+    border-bottom: var(--secundary) solid;
+    color: var(--terciary);
+    transform: scale(1.1);
 }
 
 .hero {
-    background-color: var(--dark);
+    background-color: var(--dark-light);
     position: relative;
 }
 
@@ -119,7 +124,7 @@ body {
     font-size: 1rem;
     color: var(--secundary);
     top: 418px;
-    padding-top: 5px;
+    padding-top: 10px;
     z-index: 11;
 }
 
@@ -127,24 +132,8 @@ body {
     color: var(--terciary);
 }
 
-.profile-me {
-    font-size: 1.3rem;
-    color: var(--secundary);
-    top: 490px;
-    z-index: 11;
-}
-
-.profile-me:hover {
-    border-bottom: var(--terciary) solid;
-}
-
-.profile-me a {
-    color: var(--secundary);
-    text-decoration: none;
-}
-
 .contact-icon {
-    top: 450px;
+    top: 460px;
     z-index: 11;
 }
 .contact-icon img {
@@ -165,6 +154,7 @@ body {
 .portfolio-section h2 {
     padding: 40px;
     text-align: center;
+    color: var(--white);
 }
 
 .portfolio-grid {
@@ -189,3 +179,5 @@ body {
 .portfolio-grid img:hover {
     transform: scale(1.1);
 }
+
+/*Skills*/
