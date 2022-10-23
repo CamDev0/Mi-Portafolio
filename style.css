@@ -19,6 +19,16 @@ body {
     color: var(--secundary);
 }
 
+header {
+    background-color: var(--dark);
+    
+    /*Menú fijo*/
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    padding: 7px 0;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -70,6 +80,7 @@ body {
 
 
 
+
 /*Profile*/
 
 .information div {
@@ -87,7 +98,7 @@ body {
     background-color: var(--dark);
     opacity: 0.7;
     z-index: 10;
-    top: 70px;
+    top: 100px;
 }
 
 .circle-light {
@@ -97,7 +108,7 @@ body {
     border: solid 30px var(--primary);
     opacity: .2;
     z-index: 19;
-    top: 90px;
+    top: 120px;
 }
 
 .circle {
@@ -106,11 +117,11 @@ body {
     border-radius: 500px;
     border: solid 15px var(--terciary);
     z-index: 21;
-    top: 120px;
+    top: 150px;
 }
 
 .profile-img {
-    top: 134px;
+    top: 164px;
     z-index: 20;
 }
 
@@ -123,14 +134,14 @@ body {
 .profile-name {
     font-size: 1.9rem;
     color: var(--secundary);
-    top: 388px;
+    top: 418px;
     z-index: 11;
 }
 
 .profile-studies {
     font-size: 1rem;
     color: var(--secundary);
-    top: 418px;
+    top: 448px;
     padding-top: 10px;
     z-index: 11;
 }
@@ -140,7 +151,7 @@ body {
 }
 
 .contact-icon {
-    top: 460px;
+    top: 490px;
     z-index: 11;
 }
 .contact-icon img {
@@ -157,7 +168,7 @@ body {
 
 .portfolio {
     background-color: var(--dark-light);
-    padding-bottom: 60px;
+    padding: 50px 0;
 }
 
 .portfolio-section h2 {
@@ -213,7 +224,7 @@ section.skills {
 }
 
 .skill h2 {
-    padding-bottom: 60px;
+    padding: 50px 0;
     color: var(--white);
     text-align: center;
 }
@@ -324,7 +335,9 @@ footer a:hover {
 }
 
 .eins-modal-preview {
-    width: 300px;
+    max-width: 350px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .eins-modal-preview img {
@@ -334,7 +347,7 @@ footer a:hover {
 
 .proyect-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(270px, auto));
 }
 
 .eins-modal-text p {
@@ -353,4 +366,44 @@ footer a:hover {
 .eins-modal-tech img {
     width: 50px;
     height: 50px;
+}
+
+/*form*/
+
+form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+form > label > input {
+    background-color: var(--dark);
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: var(--terciary);
+    outline: none;
+    opacity: .7;
+    width: 100%;
+}
+
+form > label > textarea {
+    background-color: var(--dark);
+    border-radius: 10px;
+    padding: 40px;
+    color: var(--terciary);
+    outline: none;
+    opacity: .7;
+    width: 100%;
+}
+
+label {
+    padding: 5px;
+}
+
+form > button {
+    background-color: var(--secundary);
+    color: var(--dark);
+    border-radius: 10px;
+    padding: 10px;
 }
