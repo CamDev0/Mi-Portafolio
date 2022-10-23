@@ -38,6 +38,11 @@ body {
 
 .navbar ul li {
     padding-top: 8px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar ul li:hover{
+    transform: scale(1.2);
 }
 
 .navbar a {
@@ -46,13 +51,10 @@ body {
     text-decoration: none;
     color: var(--secundary);
     margin: 20px;
-    transition: transform 0.2s ease;
 }
 
 .navbar a:hover{
-    border-bottom: var(--secundary) solid;
     color: var(--terciary);
-    transform: scale(1.1);
 }
 
 .hero {
@@ -144,6 +146,7 @@ body {
 .contact-icon img {
     width: 40px;
     margin: 0 10px;
+    transition: transform 0.2s ease-in;
 }
 
 .contact-icon img:hover {
@@ -287,6 +290,7 @@ section.skills {
 .social-red img {
     width: 60px;
     margin: 10px;
+    transition: transform 0.2s ease;
 }
 
 .social-red img:hover {
@@ -308,4 +312,45 @@ footer a {
 
 footer a:hover {
     text-decoration: line-through;
+    color: var(--terciary);
+}
+
+
+/*Modales*/
+
+.eins-modal-content {
+    max-width: 700px;
+    background-color: var(--dark-light);
+}
+
+.eins-modal-preview {
+    width: 300px;
+}
+
+.eins-modal-preview img {
+    width: 100%;
+    padding: 0 50px 20px 0; /*En sentido de las manecillas del reloj*/
+}
+
+.proyect-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+
+.eins-modal-text p {
+    font-size: 1.1rem;
+}
+
+.eins-modal-textlink {
+    padding: 80px 0 10px;
+}
+
+.eins-modal-textlink a {
+    color: var(--secundary);
+    margin: 5px;
+}
+
+.eins-modal-tech img {
+    width: 50px;
+    height: 50px;
 }

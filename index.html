@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -57,10 +57,9 @@
     <div class="portfolio-section container">
         <h2>Proyectos</h2>
         <div class="portfolio-grid">
-            <div><img src="./img/ejemplo-portfolio.jpg"></div>
-            <div><img src="./img/ejemplo-portfolio.jpg"></div>
-            <div><img src="./img/ejemplo-portfolio.jpg"></div>
-            <div><img src="./img/ejemplo-portfolio.jpg"></div>
+            <div><a data-modal-id="proyect-one"> <img src="./img/ejemplo-portfolio.jpg"></a> </div>
+            <div> <a data-modal-id="proyect-two"> <img src="./img/ejemplo-portfolio.jpg"></a> </div>
+            <div> <a data-modal-id="proyect-three"> <img src="./img/ejemplo-portfolio.jpg"></a> </div>
         </div>
     </div>
 </section>
@@ -149,6 +148,94 @@
 <footer>
     <p>Todos los derechos reservados | <a href="#">Camilo Barrios</a></p>
 </footer>
+
+
+<!--Modal section-->
+
+<div id="proyect-one" class="eins-modal"    data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="proyect-content">
+            <div class="eins-modal-preview">
+                <img src="/img/ejemplo-portfolio.jpg" alt="proyect-one">
+            </div>
+            <div class="eins-modal-text">
+                <p>
+                Vestibulum lorem justo, volutpat quis ipsum sed, eleifend egestas sem. Nunc ante nibh, blandit vel purus ut, porttitor mattis tellus. Duis rhoncus vitae leo et malesuada. Sed in neque vel tellus dignissim laoreet.
+                </p>
+                <div class="eins-modal-textlink">
+                    <span>Enlace:</span><a href="https://camstore.netlify.app/">https://camstore.netlify.app/</a>
+                </div>
+                <div class="eins-modal-textcreate">
+                    <span>Creado con: </span>
+                    <div class="eins-modal-tech">
+                        <img src="/img/html.png" alt="html">
+                        <img src="/img/css.png" alt="css">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="proyect-two" class="eins-modal"    data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="proyect-content">
+            <div class="eins-modal-preview">
+                <img src="/img/ejemplo-portfolio.jpg" alt="proyect-two">
+            </div>
+            <div class="eins-modal-text">
+                <p>
+                Vestibulum lorem justo, volutpat quis ipsum sed, eleifend egestas sem. Nunc ante nibh, blandit vel purus ut, porttitor mattis tellus. Duis rhoncus vitae leo et malesuada. Sed in neque vel tellus dignissim laoreet.
+                </p>
+                <div class="eins-modal-textlink">
+                    <span>Enlace:</span><a href="https://camstore.netlify.app/">https://camstore.netlify.app/</a>
+                </div>
+                <div class="eins-modal-textcreate">
+                    <span>Creado con: </span>
+                    <div class="eins-modal-tech">
+                        <img src="/img/html.png" alt="html">
+                        <img src="/img/css.png" alt="css">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="proyect-three" class="eins-modal"    data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="proyect-content">
+            <div class="eins-modal-preview">
+                <img src="/img/ejemplo-portfolio.jpg" alt="proyect-three">
+            </div>
+            <div class="eins-modal-text">
+                <p>
+                Vestibulum lorem justo, volutpat quis ipsum sed, eleifend egestas sem. Nunc ante nibh, blandit vel purus ut, porttitor mattis tellus. Duis rhoncus vitae leo et malesuada. Sed in neque vel tellus dignissim laoreet.
+                </p>
+                <div class="eins-modal-textlink">
+                    <span>Enlace:</span><a href="https://camstore.netlify.app/">https://camstore.netlify.app/</a>
+                </div>
+                <div class="eins-modal-textcreate">
+                    <span>Creado con: </span>
+                    <div class="eins-modal-tech">
+                        <img src="/img/html.png" alt="html">
+                        <img src="/img/css.png" alt="css">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--End Modal-Section-->
+
+
+
+
 <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
 </html>
