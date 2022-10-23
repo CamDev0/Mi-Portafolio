@@ -1,0 +1,22 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "portfolio personal",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamDev0/Mi-Portafolio.git"
+  },
+  "author": "Camilo Barrios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamDev0/Mi-Portafolio/issues"
+  },
+  "homepage": "https://github.com/CamDev0/Mi-Portafolio#readme",
+  "dependencies": {
+    "eins-modal": "^2.2.2"
+  }
+}
