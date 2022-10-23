@@ -27,6 +27,10 @@ header {
     top: 0;
     z-index: 30;
     padding: 7px 0;
+    /*sombra*/
+    -webkit-box-shadow: 0px 5px 7px 0px rgba(92,78,92,0.12);
+    -moz-box-shadow: 0px 5px 7px 0px rgba(92,78,92,0.12);
+     box-shadow: 0px 5px 7px 0px rgba(92,78,92,0.12);
 }
 
 .container {
@@ -192,12 +196,13 @@ header {
     border-radius: 10px;
     
     /*Le decimos que transform esta cambiando en el estado final, y le indicamos que haga una transición con el efecto y el tiempo que indicamos*/
-    transition: transform 0.2s ease;
+    transition: transform 0.4s ease;
 }
 
 /*Estado final de la transición cuando se pone el mouse encima*/
 .portfolio-grid img:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .linea {
@@ -301,11 +306,12 @@ section.skills {
 .social-red img {
     width: 60px;
     margin: 10px;
-    transition: transform 0.2s ease;
+    transition: transform 0.4s ease;
 }
 
 .social-red img:hover {
     transform: scale(1.2);
+    opacity: .70;
 }
 
 /*footer*/
@@ -342,6 +348,7 @@ footer a:hover {
 
 .eins-modal-preview img {
     width: 100%;
+    height: auto;
     padding: 0 50px 20px 0; /*En sentido de las manecillas del reloj*/
 }
 
@@ -354,13 +361,23 @@ footer a:hover {
     font-size: 1.1rem;
 }
 
+.eins-modal-text span{
+    color: var(--white);
+    font-weight: 700;
+}
+
 .eins-modal-textlink {
-    padding: 80px 0 10px;
+    padding: 50px 0 10px;
 }
 
 .eins-modal-textlink a {
     color: var(--secundary);
+    text-decoration: none;
     margin: 5px;
+}
+
+.eins-modal-textlink a:hover {
+    color: var(--terciary);
 }
 
 .eins-modal-tech img {
@@ -406,4 +423,13 @@ form > button {
     color: var(--dark);
     border-radius: 10px;
     padding: 10px;
+}
+
+.cursor:hover {
+    cursor: pointer;
+}
+
+form > button:hover {
+    cursor: pointer;
+    opacity: .75;
 }
