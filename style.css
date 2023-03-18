@@ -71,14 +71,12 @@ header {
     color: var(--terciary);
 }
 
-.hero {
-    background-color: var(--dark);
-    position: relative;
-}
 
-.hero img {
+.img-fondo {
     width: 100%;
     height: 530px;
+    background-size: cover;
+    background-repeat: no-repeat;
     opacity: 0.65;
 }
 

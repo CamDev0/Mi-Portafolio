@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Cam</title>
    
-   <!-- <link rel="stylesheet" href="./node_modules/eins-modal/dist/css/eins-modal.min.css">
-    <link rel="stylesheet" href="style.css"> -->
+  <!-- Se pasan a importar en el index.js
+     <link rel="stylesheet" href="./node_modules/eins-modal/dist/css/eins-modal.min.css">
+     <link rel="stylesheet" href="style.css"> 
+    -->
     
     <!----------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,11 +40,9 @@
 
 <!--Nav-->
 <section>
-    <div class="hero" >
-        <div class="container">
-            <img src="./img/fondo.jpg" alt="img-fondo">
-        </div>
-    </div>
+    <img class="img-fondo" src="img/fondo.jpg" alt="img-fondo">
+
+
 
     <!--Profile & information-->
 
@@ -58,8 +58,8 @@
 
         <div class="contact-icon">
             <a href="https://github.com/CamDev0" target="_blank"> <img src="./img/icons8-github.svg" alt="my-github"></a>
-            <a href="https://www.linkedin.com/in/camilo-barrios-b8813a238/ " target="_blank"> <img src="./img/icons8-linkedin.svg" alt="my-linkdin"></a>
-            <a href="https://drive.google.com/file/d/1Go87MkU_SPUHtxUqTmCMfCa_H96ySH1c/view?usp=sharing" target="_blank"> <img src="./img/cv-icon.svg" alt="my-CV"></a>
+            <a href="https://www.linkedin.com/in/camilo-barrios-meza-b8813a238/" target="_blank"> <img src="./img/icons8-linkedin.svg" alt="my-linkdin"></a>
+            <a href="https://drive.google.com/file/d/14r6Jz9BHrV3yMATF0gpLKmiy0ISmfqSv/view?usp=share_link" target="_blank"> <img src="./img/cv-icon.svg" alt="my-CV"></a>
         </div>
     </div>
 </section>
@@ -77,6 +77,7 @@
             <div> <a data-modal-id="proyect-three"> <img src="./img/proyect-three.png"></a> </div>
             <div> <a data-modal-id="proyect-four"> <img src="./img/proyect-four.png"></a> </div>
             <div> <a data-modal-id="proyect-five"> <img src="./img/proyect-five.png"></a> </div>
+            <div> <a data-modal-id="proyect-six"> <img src="./img/proyect-six.png"></a> </div>
         </div>
     </div>
 </section>
@@ -100,7 +101,7 @@
                 
                 <div>
                     <img src="./img/scss.png"> 
-                    <h3>SCSS</h3>
+                    <h3>SASS</h3>
                 </div>
                 
                 <div>
@@ -142,6 +143,11 @@
                     <img src="./img/git.png"> 
                     <h3>GIT</h3>
                 </div>
+
+                <div>
+                    <img src="./img/postman.png"> 
+                    <h3>POSTMAN</h3>
+                </div>
                 
             </div>
         </div>
@@ -152,13 +158,13 @@
     <div class="about-content container">
         <div class="about-info">
             <p>
-            Mi nombre es Camilo Barrios, soy estudiante de Desarrollo de Software, me considero un eterno aprendiz, siempre estoy aprendiendo cosas nuevas de este maravilloso mundo de la programación, cada vez que hago proyectos siento que aprendo mas y eso me hace sentir preparado para nuevos proyectos y nuevos retos, actualmente estoy aprendiendo desarrollo web con JS, HTML y CSS, en el camino me encuentro diferentes tecnologías muy interesantes, además en el Instituto me enseñan POO, POE con C# y desarrollo en bases de datos con SQL server, esto es increíble! Aún me falta mucho por aprender, lo cuál me emociona y me motiva.
+            Mi nombre es Camilo Barrios, soy estudiante de Desarrollo de Software, me considero un eterno aprendiz, siempre estoy aprendiendo cosas nuevas de este maravilloso mundo de la programación, cada vez que hago proyectos siento que aprendo mas y eso me hace sentir preparado para nuevos retos, en el camino me encuentro diferentes tecnologías muy interesantes, esto es increíble! Aún me falta mucho por aprender, lo cuál me emociona y me motiva.
             </p>
         </div>
 
         <div class="social-red">
             <a href="https://github.com/CamDev0" target="_blank"> <img src="./img/about-github.png" alt="my-github"></a>
-            <a href="https://www.linkedin.com/in/camilo-barrios-b8813a238/" target="_blank" > <img src="./img/about-linkdin.png" alt="my-linkdin"></a>
+            <a href="https://www.linkedin.com/in/camilo-barrios-meza-b8813a238/" target="_blank" > <img src="./img/about-linkdin.png" alt="my-linkdin"></a>
             <a class="cursor" data-modal-id="form-portfolio"> <img src="./img/about-email.png" alt="my-email"></a>
         </div>
     </div>
@@ -294,14 +300,14 @@
         <div class="eins-modal-close"></div>
         <div class="proyect-content">
             <div class="eins-modal-preview">
-                <img src="./img/proyect-five.png" alt="proyect-four">
+                <img src="./img/proyect-five.png" alt="proyect-five">
             </div>
             <div class="eins-modal-text">
                 <p>
                     <span>Descripción:</span>
                     <br>
                     <br>
-                Blog de Café, es una página creada con html y css, aplicando buenas prácticas con conocimientos aprendidos anteriormente, también practiqué algo de performance con este proyecto.
+                Blog de Café, es una página creada con html, css y js, aplicando buenas prácticas con conocimientos aprendidos anteriormente, también practiqué algo de performance con este proyecto.
                 </p>
                 <div class="eins-modal-textlink">
                     <span>Enlace:</span><a href="https://blog-cafe-cam.netlify.app" target="_blank">https://blog-cafe-cam.netlify.app</a>
@@ -311,6 +317,37 @@
                     <div class="eins-modal-tech">
                         <img src="./img/html.png" alt="html">
                         <img src="./img/css.png" alt="css">
+                        <img src="./img/js.png" alt="css">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="proyect-six" class="eins-modal"    data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="proyect-content">
+            <div class="eins-modal-preview">
+                <img src="./img/proyect-six.png" alt="proyect-six">
+            </div>
+            <div class="eins-modal-text">
+                <p>
+                    <span>Descripción:</span>
+                    <br>
+                    <br>
+                Mascotas, es una aplicación de escritorio, realizada con C# .Net, en esta practiqué y aprendí mucho sobre crud, manejo de bases de datos, consultas, entre otros, en github tengo el código y en el readme imágenes del programa.
+                </p>
+                <div class="eins-modal-textlink">
+                    <span>Enlace:</span><a href="https://github.com/CamDev0/Mascotas" target="_blank">https://github.com/CamDev0/Mascotas</a>
+                </div>
+                <div class="eins-modal-textcreate">
+                    <span>Creado con: </span>
+                    <div class="eins-modal-tech">
+                        <img src="./img/vstudio.png" alt="html">
+                        <img src="./img/c.png" alt="css">
+                        <img src="./img/sql.png" alt="js">
                     </div>
                 </div>
             </div>
@@ -342,6 +379,9 @@
 
 <!--End Modal-Section-->
 
-<!--<script src="./node_modules/eins-modal/dist/js/eins-modal.min.js"></script>-->
+<!-- Se pasan a importar en el index.js
+    <script src="./node_modules/eins-modal/dist/js/eins-modal.min.js"></script>   
+-->
+
 </body>
 </html>
