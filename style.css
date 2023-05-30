@@ -24,7 +24,7 @@
 body {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    color: var(--secundary);
+    color: var(--primary);
 }
 
 header {
@@ -76,7 +76,7 @@ header {
 }
 
 .navbar a:hover{
-    color: var(--secundary);
+    color: var(--white);
 }
 
 
@@ -330,12 +330,12 @@ footer {
 
 footer a {
     text-decoration:none;
-    color: var(--secundary);
+    color: var(--primary);
 }
 
 footer a:hover {
     text-decoration: line-through;
-    color: var(--terciary);
+    color: var(--dark-light);
 }
 
 
@@ -377,7 +377,7 @@ footer a:hover {
 }
 
 .eins-modal-textlink a {
-    color: var(--secundary);
+    color: var(--primary);
     text-decoration: none;
     margin: 5px;
 }
