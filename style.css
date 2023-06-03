@@ -177,7 +177,7 @@ header {
 /*Portfolio*/
 
 .portfolio {
-    background-color: var(--dark-light);
+    background-color: var(--dark);
     padding: 50px 0;
 }
 
@@ -226,7 +226,7 @@ section.skills {
 
 .skill {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(290px, auto));
     justify-content: center;
     gap: 170px;
     width: 90%;
@@ -246,16 +246,16 @@ section.skills {
 
 .knowledge {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(80px, auto));
     justify-content: center;
     gap: 25px;
 }
 
 .tools {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(70px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
     justify-content: center;
-    gap: 50px;
+    gap: 60px;
 }
 
 /*Tooltip*/
@@ -343,7 +343,7 @@ footer a:hover {
 
 .eins-modal-content {
     max-width: 700px;
-    background-color: var(--dark-light);
+    background-color: var(--dark);
 }
 
 .eins-modal-preview {
