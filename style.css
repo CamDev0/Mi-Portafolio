@@ -15,7 +15,7 @@
 */
     --primary: #3E432E;
     --secundary: #174d4d;
-    --terciary: #ffffff;
+    --terciary: #ffff;
     --dark-light: #131313;
     --dark: #050505;
     --white: #86868b;
@@ -76,7 +76,7 @@ header {
 }
 
 .navbar a:hover{
-    color: var(--white);
+    color: var(--terciary);
 }
 
 
@@ -335,7 +335,7 @@ footer a {
 
 footer a:hover {
     text-decoration: line-through;
-    color: var(--dark-light);
+    color: var(--terciary);
 }
 
 
